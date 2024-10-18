@@ -22,7 +22,6 @@ RUN docker run -d -p 3000:3000 \
   --name one-api \
   --restart always \
   -e TZ=Asia/Shanghai \
-  -e SQL_DSN="postgres://postgres:123456@localhost:5432/oneapi" \
   -v /home/ubuntu/data/one-api:/data \
   ghcr.io/martialbe/one-api
 EXPOSE WEBSITE http://localhost:3000
